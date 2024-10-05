@@ -1,0 +1,26 @@
+
+#fortags{color: purple;
+}
+/*комбіновані селектори*/
+p , h2{
+    color: rgb(165, 69, 69);
+}
+/**/
+body header p{
+    color: black;
+ }
+ main > p  {
+    color: green;
+}
+.div-h2-1 + p{
+    color: aquamarine;
+} 
+.li-start ~ li span {
+        color: red;
+}
+[Yura]{
+    background-color: blue;
+}
+.d3 h2:hover{
+    background-color: gray;
+}
