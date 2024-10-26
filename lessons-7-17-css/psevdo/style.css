@@ -1,0 +1,31 @@
+.el_a:visited{
+    color: gray;
+}
+a:hover{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+a span{
+    display: none;
+}
+a:hover span{
+    display: inline;
+}
+/*pseudoelement*/
+.el_a{
+    position: relative;
+}
+
+.el_a::before{
+    content:'123';
+    color: blueviolet;
+    font-size: 24px;
+}
+.el_a::after{
+    content:'456' ;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    font-size: 10px;
+    background-color: yellow;
+}
