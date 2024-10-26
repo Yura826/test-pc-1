@@ -39,9 +39,11 @@ section p:nth-child(1){
 }
 section:nth-child(2){
         z-index: 1;
+       
 } 
 section:nth-child(3){
     z-index: 2;
+    height: 500px;
 } 
 div{
     position: fixed;
@@ -51,4 +53,11 @@ div{
     height: 30px;
     background-color: red;
     z-index: 3;
+}
+.sticky-for-div{
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    background-color: blue;
 }
