@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'nav nav nav';
+    gap: 10;
+    padding:20px;
+
+}
+header, nav, .article, .images, .text-image, footer{
+    padding: 20px;
+    background-color: #777;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
