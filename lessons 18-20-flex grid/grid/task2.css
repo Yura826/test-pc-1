@@ -4,19 +4,60 @@ body{
 }
 .container{
     display: grid;
-    grid-template-areas: 'header header header'
-    'nav nav nav';
-    gap: 10;
-    padding:20px;
-
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'articles articles articles'
+    'images images images'
+    'text text text'
+    'footer footer footer';
+    gap: 10px;
+    padding:0;
 }
 header, nav, .article, .images, .text-image, footer{
     padding: 20px;
-    background-color: #777;
+   /* background-color: #777;*/
 }
 header{
     grid-area: header;
+    text-align: center;
+    background-color: #474747;
+    color: white;
 }
 nav{
     grid-area: nav;
+    background-image: linear-gradient(green, lightgreen);
+}
+.articles{
+    grid-area: articles;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: bisque;
+}
+article{
+    padding: 10px;
+}
+.images{
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+footer{
+    grid-column: footer;
+}
+img{
+    width: 100%;
+}
+footer{
+    background-color: #777;
+    text-align: center;
+    padding: 50px;
+}
+.text-image{
+    grid-area: text;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
 }
